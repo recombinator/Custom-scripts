@@ -1,0 +1,294 @@
+#!/bin/sh
+# BPM Filename ReadOut-script Version 1.0
+# Made by recombinator
+
+
+# BPM Values
+
+FILES_BPM80_89=$(ls -l *8[0-9].mp3 2> /dev/null)
+FILES_BPM90_99=$(ls -l *9[0-9].mp3 2> /dev/null)
+FILES_BPM100_109=$(ls -l *1[0-0][0-9].mp3 2> /dev/null)
+FILES_BPM110_119=$(ls -l *1[1-1][0-9].mp3 2> /dev/null)
+FILES_BPM120_124=$(ls -l *1[2-2][0-4].mp3 2> /dev/null)
+FILES_BPM125_129=$(ls -l *1[2-2][5-9].mp3 2> /dev/null)
+FILES_BPM130_134=$(ls -l *1[3-3][0-4].mp3 2> /dev/null)
+FILES_BPM135_139=$(ls -l *1[3-3][5-9].mp3 2> /dev/null)
+FILES_BPM140_144=$(ls -l *1[4-4][0-4].mp3 2> /dev/null)
+FILES_BPM145_149=$(ls -l *1[4-4][5-9].mp3 2> /dev/null)
+FILES_BPM150_159=$(ls -l *1[5-5][0-9].mp3 2> /dev/null)
+FILES_BPM160_169=$(ls -l *1[6-6][0-9].mp3 2> /dev/null)
+
+BASE_DIR=$(basename "$(pwd)")
+
+#
+
+# Clear screen
+
+clear
+
+#
+
+        if [ "$FILES_BPM80_89" ]; then
+        echo "80 - 89 BPM Files exist : Checking for directory....." '\n'
+
+                if [ -d "$BASE_DIR"_80-89/ ]; then
+                echo "80-89 BPM Directory already exists.....Moving files!" '\n'
+
+                else
+
+                mkdir "$BASE_DIR"_80-89/
+                echo "Directory does not exist : Making 80-89 bpm directory....." '\n'
+
+        fi
+
+		mv *8[0-9].mp3 "$BASE_DIR"_80-89/
+        echo "Moving 80-89 BPM files to directory....." '\n''\n''\n'
+
+		else
+		
+		echo "80 - 89 BPM Files do not exist : Skipping....." '\n''\n''\n'
+
+fi
+
+        if [ "$FILES_BPM90_99" ]; then
+        echo "90 - 99 BPM Files exist : Checking for directory....." '\n'
+
+                if [ -d "$BASE_DIR"_90-99/ ]; then
+                echo "90-99 BPM Directory already exists.....Moving files!" '\n'
+
+                else
+
+                mkdir "$BASE_DIR"_90-99/
+                echo "Directory does not exist : Making 90-99 bpm directory....." '\n'
+
+        fi
+
+		mv *9[0-9].mp3 "$BASE_DIR"_90-99/
+        echo "Moving 90-99 BPM files to directory....." '\n''\n''\n'
+
+		else
+		
+		echo "90 - 99 BPM Files do not exist : Skipping....." '\n''\n''\n'
+
+fi
+
+        if [ "$FILES_BPM100_109" ]; then
+        echo "100 - 109 BPM Files exist : Checking for directory....." '\n'
+
+                if [ -d "$BASE_DIR"_100-109/ ]; then
+                echo "100-109 BPM Directory already exists.....Moving files!" '\n'
+
+                else
+
+                mkdir "$BASE_DIR"_100-109/
+                echo "Directory does not exist : Making 100-109 bpm directory....." '\n'
+
+        fi
+
+		mv *1[0-0][0-9].mp3 "$BASE_DIR"_100-109/
+        echo "Moving 100-109 BPM files to directory....." '\n''\n''\n'
+
+		else
+		
+		echo "100 - 109 BPM Files do not exist : Skipping....." '\n''\n''\n'
+
+fi
+
+        if [ "$FILES_BPM110_119" ]; then
+        echo "110 - 119 BPM Files exist : Checking for directory....." '\n'
+
+                if [ -d "$BASE_DIR"_110-119/ ]; then
+                echo "110-119 BPM Directory already exists.....Moving files!" '\n'
+        
+                else
+                
+                mkdir "$BASE_DIR"_110-119/
+                echo "Directory does not exist : Making 110-119 bpm directory....." '\n'
+
+        fi
+
+		mv *1[1-1][0-9].mp3 "$BASE_DIR"_110-119/
+        echo "Moving 110-119 BPM files to directory....." '\n''\n''\n'
+
+		else
+		
+		echo "110 - 119 BPM Files do not exist : Skipping....." '\n''\n''\n'
+
+fi      
+
+        if [ "$FILES_BPM120_124" ]; then
+        echo "120 - 124 BPM Files exist : Moving to directory....." '\n'
+
+                if [ -d "$BASE_DIR"_120-124/ ]; then
+                echo "120-124 BPM Directory already exists.....Moving files!" '\n'
+        
+                else
+                
+                mkdir "$BASE_DIR"_120-124/
+                echo "Directory does not exist : Making 120-124 bpm directory....." '\n'
+
+		fi
+		
+		mv *1[2-2][0-4].mp3 "$BASE_DIR"_120-124/
+        echo "Moving 120-124 BPM files to directory....." '\n''\n''\n'
+
+		else
+		
+		echo "120 - 124 BPM Files do not exist : Skipping....." '\n''\n''\n'
+
+fi
+
+        if [ "$FILES_BPM125_129" ]; then
+        echo "125 - 129 BPM Files exist : Moving to directory....." '\n'
+
+                if [ -d "$BASE_DIR"_125-129/ ]; then
+                echo "125-129 BPM Directory already exists.....Moving files!" '\n'
+                        
+                else
+                
+                mkdir "$BASE_DIR"_125-129/
+                echo "Directory does not exist : Making 125-129 bpm directory....." '\n'
+
+		fi
+		
+		mv *1[2-2][5-9].mp3 "$BASE_DIR"_125-129/
+        echo "Moving 125-129 BPM files to directory....." '\n''\n''\n'
+
+		else
+		
+		echo "125 - 129 BPM Files do not exist : Skipping....." '\n''\n''\n'
+
+fi
+
+        if [ "$FILES_BPM130_134" ]; then
+        echo "130 - 134 BPM Files exist : Moving to directory....." '\n'
+
+                if [ -d "$BASE_DIR"_130-134/ ]; then
+                echo "130-134 BPM Directory already exists.....Moving files!" '\n'
+        
+                else
+                
+                mkdir "$BASE_DIR"_130-134/
+                echo "Directory does not exist : Making 130-134 bpm directory....." '\n'
+
+		fi
+		
+		mv *1[3-3][0-4].mp3 "$BASE_DIR"_130-134/
+        echo "Moving 130-134 BPM files to directory....." '\n''\n''\n'
+
+		else
+		
+		echo "130 - 134 BPM Files do not exist : Skipping....." '\n''\n''\n'
+
+fi
+
+        if [ "$FILES_BPM135_139" ]; then
+        echo "135 - 139 BPM Files exist : Moving to directory....." '\n'
+
+                if [ -d "$BASE_DIR"_135-139/ ]; then
+                echo "135-139 BPM Directory already exists.....Moving files!" '\n'
+        
+                else
+                
+                mkdir "$BASE_DIR"_135-139/
+                echo "Directory does not exist : Making 135-139 bpm directory....." '\n'
+
+		fi
+		
+		mv *1[3-3][5-9].mp3 "$BASE_DIR"_135-139/
+        echo "Moving 135-139 BPM files to directory....." '\n''\n''\n'
+
+		else
+		
+		echo "135 - 139 BPM Files do not exist : Skipping....." '\n''\n''\n'
+
+fi
+
+        if [ "$FILES_BPM140_144" ]; then
+        echo "140 - 144 BPM Files exist : Moving to directory....." '\n'
+
+                if [ -d "$BASE_DIR"_140-144/ ]; then
+                echo "140-144 BPM Directory already exists.....Moving files!" '\n'
+        
+                else
+                
+                mkdir "$BASE_DIR"_140-144/
+                echo "Directory does not exist : Making 140-144 bpm directory....." '\n'
+
+		fi
+		
+		mv *1[4-4][0-4].mp3 "$BASE_DIR"_140-144/
+        echo "Moving 140-144 BPM files to directory....." '\n''\n''\n'
+
+		else
+		
+		echo "140 - 144 BPM Files do not exist : Skipping....." '\n''\n''\n'
+
+fi
+
+        if [ "$FILES_BPM145_149" ]; then
+        echo "145 - 149 BPM Files exist : Moving to directory....." '\n'
+
+                if [ -d "$BASE_DIR"_145-149/ ]; then
+                echo "145-149 BPM Directory already exists.....Moving files!" '\n'
+        
+                else
+                
+                mkdir "$BASE_DIR"_145-149/
+                echo "Directory does not exist : Making 145-149 bpm directory....." '\n'
+
+		fi
+		
+		mv *1[4-4][5-9].mp3 "$BASE_DIR"_145-149/
+        echo "Moving 145-149 BPM files to directory....." '\n''\n''\n'
+
+		else
+		
+		echo "145 - 149 BPM Files do not exist : Skipping....." '\n''\n''\n'
+
+fi
+
+        if [ "$FILES_BPM150_159" ]; then
+        echo "150 - 159 BPM Files exist : Moving to directory....." '\n'
+
+                if [ -d "$BASE_DIR"_150-159/ ]; then
+                echo "150-159 BPM Directory already exists.....Moving files!" '\n'
+        
+                else
+                
+                mkdir "$BASE_DIR"_150-159/
+                echo "Directory does not exist : Making 150-159 bpm directory....." '\n'
+
+		fi
+		
+		mv *1[5-5][0-9].mp3 "$BASE_DIR"_150-159/
+        echo "Moving 150-159 BPM files to directory....." '\n''\n''\n'
+
+		else
+		
+		echo "150 - 159 BPM Files do not exist : Skipping....." '\n''\n''\n'
+
+fi
+
+        if [ "$FILES_BPM160_169" ]; then
+        echo "160 - 169 BPM Files exist : Moving to directory....." '\n'
+
+                if [ -d "$BASE_DIR"_160-169/ ]; then
+                echo "160-169 BPM Directory already exists.....Moving files!" '\n'
+        
+                else
+                
+                mkdir "$BASE_DIR"_160-169/
+                echo "Directory does not exist : Making 160-169 bpm directory....." '\n'
+
+		fi
+
+		mv *1[6-6][0-9].mp3 "$BASE_DIR"_160-169/
+        echo "Moving 160-169 BPM files to directory....." '\n'
+
+		else
+		
+		echo "160 - 169 BPM Files do not exist : Skipping....." '\n'
+
+fi
+
