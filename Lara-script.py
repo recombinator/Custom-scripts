@@ -14,7 +14,7 @@ def menu():
 
         edgerouter = {
             "device_type": "vyos",
-            "ip": "192.168.10.254",
+            "ip": "192.168.99.254",
             "username": "admin",
             "password": "G1zm0123!",
         }
@@ -45,7 +45,7 @@ def menu():
 
         edgerouter = {
             "device_type": "vyos",
-            "ip": "192.168.10.254",
+            "ip": "192.168.99.254",
             "username": "admin",
             "password": "G1zm0123!",
         }
@@ -76,7 +76,7 @@ def menu():
 
         edgerouter = {
             "device_type": "vyos",
-            "ip": "192.168.10.254",
+            "ip": "192.168.99.254",
             "username": "admin",
             "password": "G1zm0123!",
         }
