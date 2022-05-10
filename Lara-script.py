@@ -16,7 +16,7 @@ def menu():
             "device_type": "vyos",
             "ip": "192.168.99.254",
             "username": "admin",
-            "password": "G1zm0123!",
+            "password": "password",
         }
 
         net_connect = ConnectHandler(**edgerouter)
@@ -47,7 +47,7 @@ def menu():
             "device_type": "vyos",
             "ip": "192.168.99.254",
             "username": "admin",
-            "password": "G1zm0123!",
+            "password": "password",
         }
 
         net_connect = ConnectHandler(**edgerouter)
@@ -78,7 +78,7 @@ def menu():
             "device_type": "vyos",
             "ip": "192.168.99.254",
             "username": "admin",
-            "password": "G1zm0123!",
+            "password": "password",
         }
 
         net_connect = ConnectHandler(**edgerouter)
